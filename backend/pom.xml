@@ -123,7 +123,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <!-- Bildirim push'unu in-process ApplicationEventPublisher yerine RabbitMQ uzerinden
-             gecirmek icin (bkz. backend/notlar). -->
+             gecirmek icin (mentor notu). -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>

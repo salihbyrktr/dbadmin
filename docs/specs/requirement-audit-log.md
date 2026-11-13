@@ -29,7 +29,7 @@ tarafından, ne zaman, hangi hedefe yapıldığının kalıcı ve sorgulanabilir
   (`TABLO_OLUSTURULDU`, `KOLON_SILINDI` gibi bir enum), hedef entity tipi + id, zaman damgası,
   opsiyonel serbest metin/JSON detay (örn. eski/yeni değer), opsiyonel `trace_id`.
 - **Req-2.3 (Aynı transaction):** Audit satırı, ilgili metadata/DDL yazma işlemiyle **aynı**
-  `@Transactional` metod içinde yazılacak — CLAUDE.md'nin "her yazma işlemi iki kez olur" ilkesine
+  `@Transactional` metod içinde yazılacak — DEVELOPMENT.md'nin "her yazma işlemi iki kez olur" ilkesine
   üçüncü bir yazma olarak eklenir, ayrık/asenkron yazılmaz.
 - **Req-2.4 (Okuma ucu):** `GET /api/audit-loglar` eklenecek — filtre parametreleri: kullanıcı,
   hedef tip, hedef id, tarih aralığı. Sadece ADMIN erişebilecek (`/api/kullanicilar/**` ile aynı

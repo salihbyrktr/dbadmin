@@ -1,6 +1,6 @@
 # GÖREV: Redis ile JWT Kimlik Doğrulama Önbelleklemesi (Caching)
 
-`backend/notlar`, 31 Temmuz maddesi ("Yeni Teknoloji: REDIS") için requirement.
+Mentor notlarındaki 31 Temmuz maddesi ("Yeni Teknoloji: REDIS") için requirement.
 
 ## 1. Temel Amacımız (Epic / User Story)
 

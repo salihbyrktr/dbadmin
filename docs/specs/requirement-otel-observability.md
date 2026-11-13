@@ -1,6 +1,6 @@
 # GÖREV: OpenTelemetry ile Log + Metric + Trace Birleştirmesi
 
-`backend/notlar`, "Daha ne yapabiliriz" maddesine bağlı, gözlemlenebilirlik altyapısını (Prometheus +
+Mentor notlarındaki "Daha ne yapabiliriz" maddesine bağlı, gözlemlenebilirlik altyapısını (Prometheus +
 Grafana zaten var) trace ve merkezi log toplama ile tamamlamak için requirement.
 
 ## 0. OTel Nedir, Ne İşe Yarar (Arka Plan)
@@ -20,7 +20,7 @@ Datadog'a da gönderilebilir.
 
 **Bizde bugün ne eksik, OTel bunu nasıl kapatıyor:**
 
-CLAUDE.md'nin işaret ettiği temel gözlemlenebilirlik açığı şu: her yazma işlemi metadata (Hibernate)
+DEVELOPMENT.md'nin işaret ettiği temel gözlemlenebilirlik açığı şu: her yazma işlemi metadata (Hibernate)
 + gerçek DDL (`JdbcTemplate`) olmak üzere **iki ayrı yoldan** geçiyor, ama bunlar iki ayrı logger'a
 basıyor (`org.hibernate.SQL` ve `org.springframework.jdbc.core.JdbcTemplate`) ve birbirine
 bağlanmıyor. Bir `createTablo()` isteğinde hangi SQL'in metadata'dan hangisinin DDL'den geldiğini
@@ -77,7 +77,7 @@ ve mevcut Prometheus metrikleriyle Grafana üzerinden ilişkilendirebilmek.
   Redis fail-open ile aynı felsefe: gözlemlenebilirlik bir bağımlılık değil, bir optimizasyondur.
 - **Req-3.5 (Hassas veri sızmasın):** Span attribute'larına parola hash'i, JWT secret'ı veya
   `APP_JWT_SECRET` gibi değerler asla eklenmeyecek; SQL span'lerinde parametre değerleri değil
-  sadece sorgu şekli (statement) loglanacak — CLAUDE.md'nin `bind` parametre logu için verdiği
+  sadece sorgu şekli (statement) loglanacak — DEVELOPMENT.md'nin `bind` parametre logu için verdiği
   "verbose ve düz metin şifre riski" uyarısı burada da geçerli.
 - **Req-3.6 (Kaynak tüketimi):** Yeni container'lar (Collector + Tempo + Loki, ya da tek başına
   Grafana Alloy) mevcut `docker compose up -d --build` akışına eklenecek, host makinede aşırı

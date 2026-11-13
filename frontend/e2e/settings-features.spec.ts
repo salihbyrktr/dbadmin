@@ -88,7 +88,7 @@ test("Faydalı Linkler: gruplu ve tüm servisler linkli görünür", async ({ pa
 });
 
 /**
- * Bu oturumda eklenen "demo'da iyi duran" ozellik (bkz. backend/notlar madde 10): Audit Log'un
+ * Bu oturumda eklenen "demo'da iyi duran" ozellik (mentor notu): Audit Log'un
  * Timeline gorunumu. Table<->Timeline gecisinin calistigini ve Timeline'da en az bir olay
  * kartinin (renkli marker + rozet + kullanici/hedef + detay) gorundugunu dogrular — once kendi
  * tablomuzu olusturup en az bir TABLE_CREATED satiri garanti ediyoruz (maintenance.spec.ts'teki

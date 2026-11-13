@@ -23,7 +23,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  * #create} cagirir; DB satiri {@code AuditLogService} ile ayni ilkeyle (cagiranin transaction'ina
  * katilir, fail-closed) yazilir. WebSocket push'u ise bu sinifin sorumlulugunda degil: {@link
  * #create} sadece transaction commit olduktan sonra RabbitMQ'ya bir {@link NotificationMessage}
- * publish eder (bkz. backend/notlar "RabbitMQ koyulacak notification icin"), push'u kuyruktan
+ * publish eder (mentor notu: "RabbitMQ koyulacak notification icin"), push'u kuyruktan
  * tuketen ayri bir dinleyici yapar (bkz. websocket/RabbitNotificationListener) — boylece DB yazimi
  * (garanti) ile anlik bildirim (best-effort) birbirinden ayrisir (Req-3.4).
  */

@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import tools.jackson.databind.json.JsonMapper;
 
 /**
- * Bildirim push'unun gectigi exchange/queue tanimlari (bkz. backend/notlar "RabbitMQ koyulacak
+ * Bildirim push'unun gectigi exchange/queue tanimlari (mentor notu: "RabbitMQ koyulacak
  * notification icin"). {@code NotificationService#create} bu exchange'e publish eder, {@code
  * RabbitNotificationListener} {@link #NOTIFICATION_QUEUE}'yu dinler — publish (DB yazimindan
  * sonra, AFTER_COMMIT) ve consume (WebSocket push) boylece ayni JVM icinde bile birbirinden

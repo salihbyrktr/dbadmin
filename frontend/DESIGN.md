@@ -1,6 +1,6 @@
 # DBAdmin — Tasarım Sistemi
 
-Bu doküman `frontend güzelleştirme` (notlar, 28 Temmuz / 3 Ağustos) maddesinin tasarım planıdır.
+Bu doküman `frontend güzelleştirme` (mentor notları, 28 Temmuz / 3 Ağustos) maddesinin tasarım planıdır.
 Koda geçmeden önce onaylanması için yazıldı — onaylanınca "Mimari" bölümündeki fazlara göre
 uygulanacak.
 

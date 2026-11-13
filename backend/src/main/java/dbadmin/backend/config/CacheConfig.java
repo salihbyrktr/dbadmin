@@ -20,7 +20,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 /**
  * Ana sayfadaki schema/tag/kullanici listeleri icin {@code @Cacheable}/{@code @CacheEvict}
  * altyapisi — {@link dbadmin.backend.security.UserRoleCacheService}'in aksine burada
- * Spring'in kendi annotasyon tabanli mekanizmasi kullanildi (notlar'daki "neden @Cacheable
+ * Spring'in kendi annotasyon tabanli mekanizmasi kullanildi (mentor notlarindaki "neden @Cacheable
  * kullanilmadi" sorusuna karsilik bilerek: rol cache'i JWT filter'inda parolasiz/ozel bir yolda
  * calisiyordu, bu ucu ise sadece "listele" controller metodlarindan cagriliyor — annotasyonun
  * gizledigi get/put/evict mekanigi burada bir sorun yaratmiyor).

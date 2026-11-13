@@ -1,6 +1,7 @@
-# CLAUDE.md
+# Development Guide
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+How to build, run and test DBAdmin, plus the architectural details and conventions that are easy to break.
+For *why* each decision was made, see [`DECISIONS.md`](../DECISIONS.md); feature specs live in [`docs/specs/`](./specs/).
 
 ## What this app is
 
@@ -127,9 +128,6 @@ in plaintext).
 
 ## Working in this repo
 
-- `backend/notlar` holds the supervisor's dated task list (`Yapilacaklar, temmuz 28:`) plus meeting
-  notes. Check it before starting or expanding work — some items say who should do them
-  (`AI'ya yaptirma`) and many say what comes next.
 - `DECISIONS.md` is an ADR-lite journal of what was chosen and what was ruled out. Add to it when
   making a non-obvious call.
 - Branches are per week (`frontend/week1`, `backend/week2`) and the assignment expects one PR per

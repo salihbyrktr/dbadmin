@@ -117,7 +117,7 @@ services:
 
   rabbitmq:
     # Bildirim push'unu in-process ApplicationEventPublisher yerine kalici bir kuyruktan
-    # gecirmek icin (bkz. backend/notlar "RabbitMQ koyulacak notification icin"). management
+    # gecirmek icin (mentor notu: "RabbitMQ koyulacak notification icin"). management
     # image'i, Redisinsight/MinIO console gibi tarayicidan kuyruklari gormek icin secildi.
     image: rabbitmq:3-management-alpine
     container_name: dbadmin_rabbitmq

@@ -65,7 +65,7 @@ test("Bakım sayfası: özet+sağlık görünür, audit log yedeklenince tablo b
   await expect(page.getByText("Kullanıcı").first()).toBeVisible();
 
   // 4) Servis sağlığı kendi sekmesinde (bkz. MaintenancePanel HEALTH_SERVICES) — Tempo/Loki
-  // buradan bilerek çıkarıldı (backend/notlar madde 10: "Servis Durumlarında -> Minio, Backend
+  // buradan bilerek çıkarıldı (mentor notu: "Servis Durumlarında -> Minio, Backend
   // -> Tempo ve Loki kaldır buradan"), o ikisi artık burada gösterilmiyor.
   await page.getByRole("tab", { name: "Servis Durumları" }).click();
   await expect(page.getByText("Postgres").first()).toBeVisible();

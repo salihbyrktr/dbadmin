@@ -45,7 +45,7 @@ tabloyu temizleyen bir bölüm.
   geçen sürede (JSON oluşturma + MinIO'ya network upload — göz ardı edilebilir kısa bir an değil)
   başka bir kullanıcının işlemi yeni bir audit satırı yazabilir; cutoff olmadan yapılan bir
   "tüm satırları sil" bu satırı da silip hiç yedeklenmemiş bir kaydı kaybettirir. Yükleme herhangi
-  bir sebeple başarısız olursa tabloya dokunulmaz, hata döner — CLAUDE.md'deki dual-write
+  bir sebeple başarısız olursa tabloya dokunulmaz, hata döner — DEVELOPMENT.md'deki dual-write
   ilkesiyle aynı: iki yazımdan biri (MinIO) başarısızken diğerine (DB silme) geçilmez.
 - **Req-2.6 (Yedeklere erişim):** Yedek dosyalarını listeleyen/indiren ayrı bir ekran bu aşamada
   **yapılmayacak** (bkz. §4) — dosyalara MinIO console üzerinden bakılacak.

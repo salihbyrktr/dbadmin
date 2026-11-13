@@ -12,7 +12,7 @@ import tools.jackson.databind.ObjectMapper;
  * {@link dbadmin.backend.service.NotificationService#create}'in transaction commit sonrasi
  * RabbitMQ'ya publish ettigi {@link NotificationMessage}'i {@link RabbitConfig#NOTIFICATION_QUEUE}
  * kuyrugundan tuketip {@link WebSocketSessionRegistry} uzerinden hedefli push yapar — bkz.
- * requirement-websocket-notifications.md Req-2.4/Req-3.5, backend/notlar "RabbitMQ koyulacak
+ * requirement-websocket-notifications.md Req-2.4/Req-3.5, mentor notu: "RabbitMQ koyulacak
  * notification icin".
  * <p>
  * Bu sinif kasitli olarak {@code NotificationService}'ten (publish) ve DB yazimindan tamamen

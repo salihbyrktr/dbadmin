@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Konsoldaki Hibernate SQL satirlarini hangi repository metodunun tetikledigini gosterir
- * (bkz. backend/notlar, "hibernate ... sonra repository katmanina baglayacagiz").
+ * (mentor notu: "hibernate ... sonra repository katmanina baglayacagiz").
  * <p>
  * Her repository cagrisini sarar ({@code @Around}), cagri suresince MDC'ye ("repo") metod
  * imzasini yazar. Logback pattern'i ({@code application-dev.properties}) bu MDC alanini

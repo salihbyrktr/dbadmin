@@ -116,7 +116,7 @@ aynı gerekçe: yönlendirme kararı konfigürasyonda açık, kodda gizli değil
 - Faz 1-2 olmadan Faz 3-5'in test edilecek bir yeri yok; sıra bu yüzden altyapı → temel trace →
   özelleştirme şeklinde.
 - Faz 3, projenin en özgün kısmı — otomatik enstrümantasyonun *gösteremediği* şeyi (dual-write
-  ayrımı) gösterdiği için CLAUDE.md'deki temel gözlemlenebilirlik açığını gerçekten kapatan adım
+  ayrımı) gösterdiği için DEVELOPMENT.md'deki temel gözlemlenebilirlik açığını gerçekten kapatan adım
   burası. Zaman kısıtlıysa Faz 4-5 ertelenebilir, Faz 3 ertelenmemeli.
 
 ## Tahmini Kapsam

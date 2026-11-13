@@ -21,7 +21,7 @@ public interface SchemaRepository extends JpaRepository<Schema, Long> {
      * iki-adimli id-sonra-fetch numarasina burada GEREK YOK: {@code Schema} entity'sinde
      * (Table'daki {@code columns} gibi) sayfalamayi bozacak bir to-many {@code @EntityGraph}
      * ilişkisi yok, o yuzden tek bir dogrudan sorgu yeterli. Filtre yine de var — "public" adinda
-     * bir schema satiri normalde HIC olusturulmaz (bkz. CLAUDE.md), ama bu WHERE olmadan sayfalama
+     * bir schema satiri normalde HIC olusturulmaz (bkz. docs/DEVELOPMENT.md), ama bu WHERE olmadan sayfalama
      * altinda (varsayimsal olarak bir gun boyle bir satir olursa) Page'in totalElements'i, servis
      * katmaninda post-fetch filtrelemenin bozacagi yanlis bir sayi verirdi.
      */

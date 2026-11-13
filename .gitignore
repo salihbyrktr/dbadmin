@@ -18,3 +18,10 @@ DBAdmin_Assignment_INTERN.docx
 # retroactive SDLC docs (requirements/ADR/backlog/test-case catalog) — for personal
 # reference only, not part of the codebase
 process-docs/
+
+# Local-only files (IDE, personal notes, AI assistant config, internal documents)
+.idea/
+*.odt
+/CLAUDE.md
+/backend/notlar
+/backend/src/N1

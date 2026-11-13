@@ -26,7 +26,7 @@ The defining property of this app: **every write happens twice.** Creating a tab
 adding/renaming/deleting a column) writes metadata rows (`Tablo`/`Kolon`) through Hibernate *and*
 runs the matching `CREATE`/`ALTER`/`DROP TABLE` against Postgres through a hand-built `JdbcTemplate`
 executor, in the same `@Transactional` method. The two must never drift apart — see
-[`CLAUDE.md`](./CLAUDE.md) for the consequences of that (SQL logging, injection surface,
+[`docs/DEVELOPMENT.md`](./docs/DEVELOPMENT.md) for the consequences of that (SQL logging, injection surface,
 non-transactional DDL).
 
 Everything besides the db/backend/frontend trio is observability or infra plumbing added while

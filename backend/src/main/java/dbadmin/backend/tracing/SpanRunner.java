@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Otomatik JDBC enstrumentasyonu metadata (Hibernate) yazma adimini ve gercek DDL calistirma
- * adimini ayni tur span olarak gosterir, ikisi trace'te ayirt edilemez (bkz. CLAUDE.md'deki
+ * adimini ayni tur span olarak gosterir, ikisi trace'te ayirt edilemez (bkz. docs/DEVELOPMENT.md'deki
  * dual-write notu). Bu sinif, servis katmanindaki bu iki adimi elle isimlendirilmis span'lere
  * sarmak icin kullanilir — Java agent yerine (bkz. DECISIONS.md "mekanizma gorunur olsun")
  * dogrudan {@link Tracer} cagrisi.
